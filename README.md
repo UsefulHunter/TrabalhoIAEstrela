@@ -8,7 +8,7 @@ Nome dos Alunos:<br>
   
 # 1. Explicação Teórica do Algoritmo
 
-O algoritmo A* consiste em uma forma de buscar um caminho, de um ponto inicial, até um ponto final, fazendo a verificação de qual o melhor caminho que pode ser percorrido durante esse percurso. Ele trabalha com aproximações heurísticas, sendo assim uma combinação do algoritmo de Busca em Largura, com a formalidade do algoritmo de Dijkstra.
+O Algoritmo A*¹ consiste em uma forma de buscar um caminho, de um ponto inicial, até um ponto final, fazendo a verificação de qual o melhor caminho que pode ser percorrido durante esse percurso. Ele trabalha com aproximações heurísticas, sendo assim uma combinação do algoritmo de Busca em Largura, com a formalidade do algoritmo de Dijkstra.
 
 # 2. Problema Proposto
 
@@ -38,9 +38,16 @@ Para a implementação da resolução desde problema, foi utilizada a linguagem 
 
 ## 3.1 Explicar os trechos mais importantes da implementação
 
+Os trechos mais importantes para a implementação do projeto, consistem, em nossa percepção, no cálculo da heurística do caminho a se percorrer, e na função para achar o peso de cada caminho que pode ser percorrido( funções heuristica, e achaPeso, respectivamente) para então conseguir traçar a melhor rota.
+
 # 4. Resultados
+
+Como retorno da função, temos um array dos caminhos que o objeto toma, desde o ponto inicial, até o ponto final, e um desenho do trajeto, feito em emojis², que são uma representação pictográfica do caminho a ser tomado.
 
 # 5. Referências Bibliográficas
 
 Algoritmo A* (Wikipédia):
 Disponível em <https://pt.wikipedia.org/wiki/Algoritmo_A*>. Acesso em 26 de mar. de 2019
+
+Emoji (Wikipédia):
+Disponível em <https://pt.wikipedia.org/wiki/Emoji>. Acesso em 28 de mar. de 2019
