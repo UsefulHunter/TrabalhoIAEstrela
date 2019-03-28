@@ -19,7 +19,7 @@ O problema proposto inicialmente, era de uma matriz 5x6:
 [0,1,0,0,0,0],<br>
 [0,0,0,0,1,0] <br>
 Onde os nós com 1 são representações de obstáculos. <br>
-Foi dado como ponto inicial, o nó [0,0], e de nó final, [4,5], e com isso, o problema consistia em achar o caminho que possui menor cursto para chegar do ponto inicial, ao ponto final.
+Foi dado como ponto inicial, o nó [0,0], e de nó final, [4,5], e com isso, o problema consistia em achar o caminho que possui menor custo para chegar do ponto inicial, ao ponto final.
 
 # 3. Implementação
 
