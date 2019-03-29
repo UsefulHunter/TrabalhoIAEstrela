@@ -50,7 +50,7 @@ Os trechos mais importantes para a implementação do projeto, consistem, em nos
 
 Como retorno da função, temos um array dos caminhos que o objeto toma, desde o ponto inicial, até o ponto final, e um desenho do trajeto, feito em emojis², que são uma representação pictográfica do caminho a ser tomado.
 
-![alt text](https://github.com/calosguilherme/TrabalhoIAEstrela/blob/master/resultado%20trabalhoIA.PNG)
+![alt text2](https://github.com/calosguilherme/TrabalhoIAEstrela/blob/master/resultado%20trabalhoIA.PNG)
 
 Neste exemplo, utilizamos os mesmo pontos finais, e iniciais, dos que são utilizados no trabalho proposto.
 
