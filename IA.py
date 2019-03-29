@@ -23,7 +23,43 @@ def achaPeso(direcao):
     else:
       return([10+heuristica([pontoAtual[0],pontoAtual[1]+1]),'direita'])
     
+
+def inserePontoInicial(pontoInicial):
+  print ("Insira um ponto inicial. Exemplo: X Y \n")
+  pontoInicialInserido=['', '']
+  pontoInicialInserido[0] = int(input("Insira o valor X: "))
+  pontoInicialInserido[1] = int(input("Insira o valor Y: "))
+  print(pontoInicialInserido, "\n")
+  if(pontoInicialInserido[0] != '' and pontoInicialInserido[1] != ''):
+    print("Ponto Inicial passou na validação!", pontoInicialInserido)
+    pontoInicial = pontoInicialInserido
+  return(pontoInicial)
+
+def inserePontoFinal(pontoFinal, pontoInicial):
+  print("Agora, insira os pontos finais. Exemplo: X Y \n")
+  pontoFinalInserido=['', '']
+  pontoFinalInserido[0] = int(input("Insira o valor X: "))
+  pontoFinalInserido[1] = int(input("Insira o valor Y: "))
+  if(pontoFinalInserido[0] != '' and pontoFinalInserido[1] != ''):
+    while(pontoFinalInserido[0] == pontoInicial[0]  and pontoFinalInserido[1] == pontoInicial[1]):
+      print("Ponto Final igual ao ponto inicial, por favor insira outros valores.", pontoFinalInserido, pontoInicial)
+      pontoFinalInserido[0] = input("Insira o valor X: ")
+      pontoFinalInserido[1] = input("Insira o valor Y: ")
+    else:
+      print("Ponto Final passou na validação!", pontoFinalInserido)
+      pontoFinal = pontoFinalInserido
+  return(pontoFinal)
+
+
+#def inputMatrix(matriz):
+#  with open('input.txt', 'r') as f:
+#    l = [[int(num) for num in line.split(',')] for line in f]
+#  print (l)
+#  matriz = l
+#  return matriz
   
+    
+    
 def mover(lado):
   if(lado == 'esquerda'):
     return(esquerda())
@@ -125,6 +161,11 @@ def atualizaMatriz():
 matriz = [[0,1,0,0,0,0],[0,1,0,0,0,0],[0,1,0,0,0,0],[0,1,0,0,0,0],[0,0,0,0,1,0]]
 pontoInicial = [0,0]
 pontoFinal = [4,5]
+
+pontoInicial = inserePontoInicial(pontoInicial)
+pontoFinal = inserePontoFinal(pontoFinal, pontoInicial)
+#matriz = inputMatrix(matriz)
+
 movimentacao = []
 pontoAtual = pontoInicial[:]
 caminhos = []
