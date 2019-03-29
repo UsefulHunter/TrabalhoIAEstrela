@@ -19,6 +19,12 @@ O problema proposto inicialmente, era de uma matriz 5x6:
 [0,1,0,0,0,0],<br>
 [0,0,0,0,1,0] <br>
 Onde os nós com 1 são representações de obstáculos. <br>
+
+Ou, como na imagem a seguir:
+
+![alt text](https://github.com/calosguilherme/TrabalhoIAEstrela/blob/master/mapaIA2.PNG)
+
+Fonte*<br>
 Foi dado como ponto inicial, o nó [0,0], e de nó final, [4,5], e com isso, o problema consistia em achar o caminho que possui menor custo para chegar do ponto inicial, ao ponto final.
 
 # 3. Implementação
@@ -51,3 +57,6 @@ Disponível em <https://pt.wikipedia.org/wiki/Algoritmo_A*>. Acesso em 26 de mar
 
 Emoji (Wikipédia):
 Disponível em <https://pt.wikipedia.org/wiki/Emoji>. Acesso em 28 de mar. de 2019
+
+ZANCHIN, Betina Carol. Análise do Algoritmo A*(A Estrela) no planejamento de Rotas de Veículos Autônomos. Trabalho de conclusão de curso. Disponível en <http://repositorio.roca.utfpr.edu.br/jspui/bitstream/1/10221/1/PG_COELE_2018_1_03.pdf>. Acesso em 29/03/2019
+
