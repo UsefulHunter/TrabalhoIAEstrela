@@ -31,20 +31,32 @@ Foi dado como ponto inicial, o nó [0,0], e de nó final, [4,5], e com isso, o p
 
 Para a implementação da resolução desde problema, foi utilizada a linguagem Python, e seguindo os seguintes passos:<br>
 1. Construir a matriz;<br>
+![defMatrix](https://github.com/calosguilherme/TrabalhoIAEstrela/blob/master/define%20matriz.png)
 2. Definir ponto inicial, final, e os obstáculos do percurso;<br>
+![definePontos](https://github.com/calosguilherme/TrabalhoIAEstrela/blob/master/Screenshot_20190329_095751.png)
 3. Definir a movimentação do objeto, durante este percurso, nas seguintes direções:<br>
   3.1. Esquerda<br>
   3.2. Direita<br>
   3.3. Acima<br>
   3.4. Abaixo<br>
+  ![defineLados](https://github.com/calosguilherme/TrabalhoIAEstrela/blob/master/defineLados.png)
 4. Fazer o cálculo da heurística envolvida, para saber o custo de cada movimento<br>
+![funcHeuristica](https://github.com/calosguilherme/TrabalhoIAEstrela/blob/master/funcHeuristica.png)
 5. Fazer a verificação do peso/custo de cada movimento, para saber qual possui o menor custo<br>
+![achaPeso](https://github.com/calosguilherme/TrabalhoIAEstrela/blob/master/achaPeso.png)
+![funcCalculaCaminho](https://github.com/calosguilherme/TrabalhoIAEstrela/blob/master/funcCalculaCaminho.png)
 6. Fazer a movimentação do objeto<br>
-7. Verificar se o objeto chegou ao ponto de destino; Se tiver chegado, encerra; Caso contrário, repete a partir do passo 5.
-
+![movMatrix](https://github.com/calosguilherme/TrabalhoIAEstrela/blob/master/movimentaMatrix.png)
+7. Verificar se o objeto chegou ao ponto de destino; Se tiver chegado, encerra; Caso contrário, repete a partir do passo 5.<br>
+![loopMatrix](https://github.com/calosguilherme/TrabalhoIAEstrela/blob/master/loopRodaMatrix.png)
 ## 3.1 Explicar os trechos mais importantes da implementação
 
 Os trechos mais importantes para a implementação do projeto, consistem, em nossa percepção, no cálculo da heurística do caminho a se percorrer, e na função para achar o peso de cada caminho que pode ser percorrido( funções heuristica, e achaPeso, respectivamente) para então conseguir traçar a melhor rota.
+
+![funcHeuristica](https://github.com/calosguilherme/TrabalhoIAEstrela/blob/master/funcHeuristica.png)
+
+
+![achaPeso](https://github.com/calosguilherme/TrabalhoIAEstrela/blob/master/achaPeso.png)
 
 # 4. Resultados
 
